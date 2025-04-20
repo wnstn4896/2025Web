@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신준수의 Portfolio</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        .project{
+            background-color: white;
+            margin-left: 150px;
+        }
+        img{
+            width:800px ;
+            height:600px;
+        }
+        fieldset {
+            width: 1000px;
+            margin-top: 50px;
+            margin-left: 50px;
+            font-size: 1.2em;
+        }
+        .container { width: 1350px; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="conbox">
+            <h1 class="logo"><a href="../index.html">신준수의 Portfolio</a></h1>
+            <nav class="nav">
+                <ul class="mainmenu">
+                    <li><a href="#">자기소개</a>
+                        <ul class="submenu sub1_bg">
+                            <li><a href="../introduction/resume.html">이력서</a></li>
+                            <li><a href="../introduction/selfintro.html">자기소개서</a></li>
+                            <li><a href="../introduction/career.html">나의 경력</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">프로젝트</a>
+                        <ul class="submenu">
+                            <li><a href="../project/project1.html">2020 - 2022</a></li>
+                            <li><a href="../project/project2.html">2023 - 2024</a></li>
+                            <li><a href="../project/project3.html">2025</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">공모전</a>
+                        <ul class="submenu">
+                            <li><a href="../contest/contest1.html">2020 - 2022</a></li>
+                            <li><a href="../contest/contest2.html">2023 - 2024</a></li>
+                            <li><a href="../contest/contest3.html">2025</a></li>
+                        </ul>
+                    </li>                                                           
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <main>
+            <div class ="project">
+              <h1>JavaScript와 PHP를 활용한 비주얼 노벨 공포 게임 【조선귀성전】</h1>
+              <img src="../img/project1.jpg" alt="조선귀성전"/>
+              <p align="center"><a href="http://junsu.dothome.co.kr/mygame/index.html">바로가기</a></p>
+              <fieldset>
+                <legend>프로젝트 개요</legend>
+                  <p>【조선귀성전】은 2021년에 개발한 HTML5 기반의 웹 게임입니다.</p>
+                  <p>장르는 조선시대 사극, 공포 게임이며, 게임으로서는 비주얼 노벨 장르를 갖고 있어 캐릭터 대사 속 분기점을 통해 여러 결말을 체험할 수 있습니다.</p>
+                  <p>캐릭터 대사 구현은 JavaScript로 하였으며, 분기점을 통한 이동은 PHP를 통해 구현하여 닷홈 호스팅을 통해 서비스하고 있습니다.</p>
+              </fieldset>
+            </div>
+          </main>
+      </div>  
+
+    <footer>
+        <div class="conbox">
+            <div class="foot1">Copyright 2025. 신준수 all rights reserved.<br>연락처 : wnstn4896@gachon.ac.kr</div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

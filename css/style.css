@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* 전체 디폴트 설정 값 조정 */
+* {margin: 0 auto; padding: 0; color: black; list-style-type: none;}
+a {text-decoration: none;}
+
+/* 최상단부 기본 틀 */
+.wrap {width: 100%;}
+header {width: 100%; height: 100px; background-color: gray;}
+header .conbox {width: 1200px; background-color: lightgray; height: 100px;}
+header .conbox .logo {width: 390px; height: 100px; float: left; text-align:center; font-size:42px }
+header .conbox .nav {width: 810px; height: 100px; float: left; position: relative;}
+
+/*상단부 탭 메뉴 */
+ul.mainmenu {width: 480px; height: 50px; position: absolute; left: 330px; top: 50px; z-index: 11; 
+            background-color: black;}
+ul.mainmenu > li {float: left; text-align: center; width: 160px; height: 50px;}
+ul.mainmenu > li  > a {width: 160px; line-height: 50px; color: white; display: block;}
+ul.mainmenu > li:hover > a {color: black; background-color: white;}
+
+ul.submenu {background-color: black; height: 0px; overflow: hidden; transition: height 1s;}
+ul.submenu > li {height: 40px;}
+ul.submenu > li > a {line-height: 40px; color: white; display: block;}
+ul.submenu > li:hover > a {color: #fff; background-color: gray}
+ul.mainmenu:hover ul.submenu {height: 160px;}
+
+ul.sub1_bg {width: 690px; margin-left: -530px;}
+ul.sub1_bg > li > a {margin-left: 530px; margin-right: -250px; width: 160px;}
+ul.sub4_bg {width: 190px;}
+ul.sub4_bg > li > a {margin-left: 0px; margin-right: 20px; width: 160px;}
+
+/* 이미지 슬라이드 */
+.slide {width: 100%; height: 400px; z-index: 10;}
+.slide .conbox {width: 1200px; height: 400px; overflow: hidden; position: relative;}
+.slide .conbox img {position: absolute; width: 1200px; height: 400px; left: 0; top: 0;}
+
+img.slide1 {
+    animation-name: slide1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+img.slide2 {
+    animation: slide2 10s infinite;
+}
+img.slide3 {
+    animation: slide3 10s infinite;
+}
+
+/* 중단부 콘텐츠 */
+.main {width: 100%; height: 200px;}
+.main .conbox {width: 1200px; height: 200px; text-align:center; }
+.main .conbox .gall {width: 1200px; height: 200px; float: left;}
+.main .conbox .gall h3 {font-size: 24px; color:black; margin: 20px 0 10px 20px;}
+.main .conbox .gall_box li img {width: 128px;}
+.main .conbox .gall_box li a {float: left; margin-top: 5px; margin-left: 20px; color: #3d177d; font-size: 13px; 
+                    text-align: center;}
+.main .conbox .gall_box li:hover a {color: #9759ff;}                   
+
+/* 하단부 콘텐츠 */
+footer {width: 100%; height: 100px; background-color: gray;}
+footer .conbox {width: 1200px; height: 100px; background-color:lightgray;}
+footer .conbox .foot1 {width: 1000px; height: 100px; float: left; line-height: 30px; font-size: 14px; 
+    text-align: center; margin-top: 20px;}
+
+/* 이미지 슬라이드 구현 */
+@keyframes slide1 {
+    0%      {top: -400px;}
+    33.33%  {top: -400px;}
+    66.66%  {top: 0px;}
+    100%    {top: 400px;}
+}
+
+@keyframes slide2 {
+    0%      {top: -400px;}
+    33.33%  {top: 0px;}
+    66.66%  {top: 400px;}
+    100%    {top: 400px;}
+}
+
+@keyframes slide3 {
+    0%      {top: 0px;}
+    33.33%  {top: 400px;}
+    66.66%  {top: -400px;}
+    100%    {top: 0px;}
+}
